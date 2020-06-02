@@ -1,5 +1,5 @@
 {% set name = "pygtrie" %}
-{% set version = "2.3.2" %}
+{% set version = "2.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6299cdedd2cbdfda0895c2dbc43efe8828e698c62b574f3ef7e14b3253f80e23
+  sha256: 2204dbd95584f67821da5b3771c4305ac5585552b3230b210f1f05322608db2c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python library implementing a trie data structure.'
+  summary: Python library implementing a trie data structure.
   doc_url: https://pygtrie.readthedocs.io/en/latest/
   dev_url: https://github.com/google/pygtrie
 
