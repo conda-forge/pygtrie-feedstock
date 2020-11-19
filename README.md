@@ -5,11 +5,13 @@ Home: https://github.com/google/pygtrie
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygtrie-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python library implementing a trie data structure.
 
+Development: https://github.com/google/pygtrie
 
+Documentation: https://pygtrie.readthedocs.io/en/latest/
 
 Current build status
 ====================
