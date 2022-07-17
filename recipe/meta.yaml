@@ -1,5 +1,5 @@
 {% set name = "pygtrie" %}
-{% set version = "2.4.2" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 43205559d28863358dbbf25045029f58e2ab357317a59b11f11ade278ac64692
+  sha256: 203514ad826eb403dab1d2e2ddd034e0d1534bbe4dbe0213bb0593f66beba4e2
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - packaging
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
