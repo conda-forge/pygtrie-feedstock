@@ -1,5 +1,5 @@
 {% set name = "pygtrie" %}
-{% set version = "2.6.0" %}
+{% set version = "2.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 926f92b7fc5aa4f5f38c9227b1925603cd18891c45cabd01ae76b22d2446eabb
+  sha256: 1934613126070b4ec51a3cefcf0c94cebb0139043b444c0f02486caebd0d8011
 
 build:
   noarch: python
